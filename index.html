@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHI Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1921e318d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/NHI2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#highlight">Highlights</a></li> -->
+                    <li><a href="#project">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hi there!</p>
+                <h1>I'm <span>Hasya Ilyana </span></h1>
+                <h2>From Sungai Buloh</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\shape.png" class="shape">
+                    <img src="images\hasya-clear-bg.png" class="person">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A grounded and ambitious Information System fresh graduate with an eagerness to explore more about data
+                        analytic field. I am a very committed person that currently searching to expand my depth of learning and
+                        working experinces.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                        <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Visulisation</span><br>Visualize data using different platform such as
+                                Microsoft PowerBi/ Metabase/ iReport/ JavaScript</li>
+                            <li><span>Data Processing</span><br>Process data with SQL</li>
+                            <li><span>Programming</span><br>Python, HTML, CSS, Java, C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2023</span><br>BACHELOR OF INFORMATION SYSTEMS (HONS.) INTELLIGENT SYSTEMS
+                                ENGINEERING</li>
+                            <li><span>2019</span><br>FOUNDATION IN SCIENCE</li>
+                            <li><span>2017</span><br>SIJIL PELAJARAN MALAYSIA</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>INTERNSHIP - DATA ANALYST</span><br>G3 Global</li>
+                            <li><span>PROTEGE - SYSTEM ENGINEER</span><br>AMP CORPORATION</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="highlight">
+        <div class="container">
+            <h1 class="sub-title">Highlights</h1>
+            <div class="highlight-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Processing</h2>
+                    <p>Adept at data processing, with a solid knowledge of tools and method to manipulate, clean, 
+                        and analyze data effectively. Capable in using Python for data processing tasks, leveraging 
+                        libraries such as Pandas and NumPy.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-folder-open"></i>
+                    <h2>Data Visulisation</h2>
+                    <p> Skilled in data visualization, particularly proficient in Power BI and Tableau. Capable of 
+                        transforming complex datasets into insightful visualizations and interactive dashboards 
+                        that drive informed decision-making.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming</h2>
+                    <p>Knowledge in Python, Java, and R, with a focus on Python during studies. Experienced in front-end 
+                        programming, showcasing a versatile skill set spanning both back-end and front-end development.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="projects">
+                    <img src="images/paan-oracle-apex.png">
+                    <div class="layer">
+                        <h3>PAAN COCONUT SHAKE MANAGMENT SYSTEM</h3>
+                        <p>Uses Oracle Apex to develop a system consists of database, form and dashboard for an organization.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="images/programming.jpg">
+                    <div class="layer">
+                        <h3>Programming</h3>
+                        <p>Capacitated Vehicle Routing Problem Using PSO</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="images/SA 5G.png">
+                    <div class="layer">
+                        <h3>WORLDWIDE SENTIMENT ANALYSIS</h3>
+                        <p>Scrape and process data from Twitter using Python and Visualize it in PowerBi.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-envelope"></i> hasyailyana@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +60192495913</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/nur-hasya-ilyana-mustafa-134885225"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/NUR HASYA ILYANA BT MUSTAFA RESUME.pdf" download class="btn btn2">Dowload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-pen-nib"></i></i> Copyright @ NHI</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzBPLHrz1ZD5diOjNG-o0KG4_jvo0Pum2A7zi0OtuSIFjIRpYAl77KNcArR03hVn-2E/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML="Message Sent Successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
